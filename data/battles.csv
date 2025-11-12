@@ -1,0 +1,35 @@
+name,attacker_king,defender_king,attacker_outcome,major_death,attacker_commander,defender_commander,region,attacker_size,defender_size
+Battle of the Golden Tooth,Joffrey/Tommen Baratheon,Robb Stark,win,1,Jaime Lannister,"Clement Piper, Vance",The Westerlands,15000,4000
+Battle at the Mummer's Ford,Joffrey/Tommen Baratheon,Robb Stark,win,1,Gregor Clegane,Beric Dondarrion,The Riverlands,,120
+Battle of Riverrun,Joffrey/Tommen Baratheon,Robb Stark,win,0,"Jaime Lannister, Andros Brax","Edmure Tully, Tytos Blackwood",The Riverlands,15000,10000
+Battle of the Green Fork,Robb Stark,Joffrey/Tommen Baratheon,loss,1,"Roose Bolton, Wylis Manderly, Medger Cerwyn, Harrion Karstark, Halys Hornwood","Tywin Lannister, Gregor Clegane, Kevan Lannister, Addam Marbrand",The Riverlands,18000,20000
+Battle of the Whispering Wood,Robb Stark,Joffrey/Tommen Baratheon,win,1,"Robb Stark, Brynden Tully",Jaime Lannister,The Riverlands,1875,6000
+Battle of the Camps,Robb Stark,Joffrey/Tommen Baratheon,win,0,"Robb Stark, Tytos Blackwood, Brynden Tully","Lord Andros Brax, Forley Prester",The Riverlands,6000,12625
+Sack of Darry,Joffrey/Tommen Baratheon,Robb Stark,win,0,Gregor Clegane,Lyman Darry,The Riverlands,,
+Battle of Moat Cailin,Balon/Euron Greyjoy,Robb Stark,win,0,Victarion Greyjoy,,The North,,
+Battle of Deepwood Motte,Balon/Euron Greyjoy,Robb Stark,win,0,Asha Greyjoy,,The North,1000,
+Battle of the Stony Shore,Balon/Euron Greyjoy,Robb Stark,win,0,Theon Greyjoy,,The North,264,
+Battle of Torrhen's Square,Robb Stark,Balon/Euron Greyjoy,win,0,"Rodrik Cassel, Cley Cerwyn",Dagmer Cleftjaw,The North,244,900
+Battle of Winterfell,Balon/Euron Greyjoy,Robb Stark,win,0,Theon Greyjoy,Bran Stark,The North,20,
+Sack of Torrhen's Square,Balon/Euron Greyjoy,Balon/Euron Greyjoy,win,0,Dagmer Cleftjaw,,The North,,
+Sack of Winterfell,Joffrey/Tommen Baratheon,Robb Stark,win,1,"Ramsay Snow, Theon Greyjoy ","Rodrik Cassel, Cley Cerwyn, Leobald Tallhart",The North,618,2000
+Battle of Oxcross,Robb Stark,Joffrey/Tommen Baratheon,win,1,"Robb Stark, Brynden Tully","Stafford Lannister, Roland Crakehall, Antario Jast",The Westerlands,6000,10000
+Siege of Storm's End,Stannis Baratheon,Renly Baratheon,win,1,"Stannis Baratheon, Davos Seaworth","Renly Baratheon, Cortnay Penrose, Loras Tyrell, Randyll Tarly, Mathis Rowan",The Stormlands,5000,20000
+Battle of the Fords,Joffrey/Tommen Baratheon,Robb Stark,loss,0,"Tywin Lannister, Flement Brax, Gregor Clegane, Addam Marbrand, Lyle Crakehall, Leo Lefford","Edmure Tully, Jason Mallister, Karyl Vance",The Riverlands,20000,10000
+Sack of Harrenhal,Robb Stark,Joffrey/Tommen Baratheon,win,1,"Roose Bolton, Vargo Hoat, Robett Glover",Amory Lorch,The Riverlands,100,100
+Battle of the Crag,Robb Stark,Joffrey/Tommen Baratheon,win,0,"Robb Stark, Smalljon Umber, Black Walder Frey",Rolph Spicer,The Westerlands,6000,
+Battle of the Blackwater,Stannis Baratheon,Joffrey/Tommen Baratheon,loss,1,"Stannis Baratheon, Imry Florent, Guyard Morrigen, Rolland Storm, Salladhor Saan, Davos Seaworth","Tyrion Lannister, Jacelyn Bywater, Sandor Clegane, Tywin Lannister, Garlan Tyrell, Mace Tyrell, Randyll Tarly",The Crownlands,21000,7250
+Siege of Darry,Robb Stark,Joffrey/Tommen Baratheon,win,0,Helman Tallhart,,The Riverlands,,
+Battle of Duskendale,Robb Stark,Joffrey/Tommen Baratheon,loss,1,"Robertt Glover, Helman Tallhart","Randyll Tarly, Gregor Clegane",The Crownlands,3000,
+Battle of the Ruby Ford,Joffrey/Tommen Baratheon,Robb Stark,win,0,Gregor Clegane,"Roose Bolton, Wylis Manderly",The Riverlands,,6000
+The Red Wedding,Joffrey/Tommen Baratheon,Robb Stark,win,1,"Walder Frey, Roose Bolton, Walder Rivers",Robb Stark,The Riverlands,3500,3500
+Siege of Seagard,Robb Stark,Joffrey/Tommen Baratheon,win,0,Walder Frey,Jason Mallister,The Riverlands,,
+Battle of Castle Black,Stannis Baratheon,Mance Rayder,loss,1,"Mance Rayder, Tormund Giantsbane, Harma Dogshead, Magnar Styr, Varamyr","Stannis Baratheon, Jon Snow, Donal Noye, Cotter Pyke",Beyond the Wall,100000,1240
+Fall of Moat Cailin,Joffrey/Tommen Baratheon,Balon/Euron Greyjoy,win,0,Ramsey Bolton,,The North,,
+Retaking of Deepwood Motte,Stannis Baratheon,Balon/Euron Greyjoy,win,0,"Stannis Baratheon, Alysane Mormot",Asha Greyjoy,The North,4500,200
+Battle of the Shield Islands,Balon/Euron Greyjoy,Joffrey/Tommen Baratheon,win,0,"Euron Greyjoy, Victarion Greyjoy",,The Reach,,
+"Invasion of Ryamsport, Vinetown, and Starfish Harbor",Balon/Euron Greyjoy,Joffrey/Tommen Baratheon,win,0,"Euron Greyjoy, Victarion Greyjoy",,The Reach,,
+Second Seige of Storm's End,Joffrey/Tommen Baratheon,Stannis Baratheon,win,0,"Mace Tyrell, Mathis Rowan",Gilbert Farring,The Stormlands,,200
+Siege of Dragonstone,Joffrey/Tommen Baratheon,Stannis Baratheon,win,0,"Loras Tyrell, Raxter Redwyne",Rolland Storm,The Stormlands,2000,
+Siege of Riverrun,Joffrey/Tommen Baratheon,Robb Stark,win,0,"Daven Lannister, Ryman Fey, Jaime Lannister",Brynden Tully,The Riverlands,3000,
+Siege of Raventree,Joffrey/Tommen Baratheon,Robb Stark,win,0,"Jonos Bracken, Jaime Lannister",Tytos Blackwood,The Riverlands,1500,
