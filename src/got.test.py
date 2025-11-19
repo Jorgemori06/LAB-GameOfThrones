@@ -6,6 +6,8 @@ def funcion_principal():
     print("La última batalla es:", batallas[-1])
     print("Rey con mayor y menor ejército:", reyes_mayor_menor_ejercito(batallas))
     print("Batallas con más comandantes:", batallas_mas_comandantes(batallas, regiones={'The North', 'The Riverlands'}, n=3))
+    print("El rey con más victorias es:", rey_mas_victorias(batallas))
 
 if __name__ == "__main__":
     funcion_principal()
+

@@ -28,8 +28,10 @@ def lee_batallas(fichero:str)->list[BatallaGOT]:
             rey_atacado = fila[2]
             gana_atacante = fila[3].lower() == 'win'
             muertes_principales = fila[4].lower() == 'true'
-            comandantes_atacantes = fila[5].split(';')
-            comandantes_atacados = fila[6].split(';')
+            atac_raw = fila[5] or ""
+            defs_raw = fila[6] or ""
+            comandantes_atacantes = [c.strip() for c in atac_raw.split(',') if c.strip()]
+            comandantes_atacados = [c.strip() for c in defs_raw.split(',') if c.strip()]
             region = fila[7]
             num_atacantes = int(fila[8]) if fila[8] else None
             num_atacados = int(fila[9]) if fila[9] else None
@@ -65,21 +67,27 @@ def reyes_mayor_menor_ejercito(batallas: list["BatallaGOT"]) -> tuple[str, str]:
        , ('Battle of the Fords', 9), ('Battle of the Camps', 5), ('Sack of Winterfell', 5)]``. _(2 puntos)_"""
 
 
-def batallas_mas_comandantes(batallas: list["BatallaGOT"],regiones: set[str] = None,n: int = None) -> list[tuple[str, int]]:
-    filtradas = []
+def batallas_mas_comandantes(batallas: list[BatallaGOT],regiones: set[str] | None = None,n: int | None = None) -> list[tuple[str, int]]:
+    
+    filtradas: list[tuple[str, int]] = []
+
     for b in batallas:
         if regiones is None or b.region in regiones:
-            atac = b.comandantes_atacantes or []
-            defs = b.comandantes_atacados or []
+            # Por si acaso, nos aseguramos de que no haya cadenas vacías
+            atac = [c for c in (b.comandantes_atacantes or []) if c]
+            defs = [c for c in (b.comandantes_atacados or []) if c]
             total = len(atac) + len(defs)
             filtradas.append((b.nombre, total))
 
-    # Ordenar de mayor a menor número de comandantes
+    # Ordenar: primero por nº de comandantes (desc), luego por nombre (asc)
     filtradas.sort(key=lambda x: (-x[1], x[0]))
+
+    # Si n no es None, nos quedamos con las n primeras
     if n is not None:
         filtradas = filtradas[:n]
 
     return filtradas
+
 """4.	**rey_mas_victorias**: recibe una lista de tuplas de tipo ``BatallaGOT`` y una cadena ``rol``, 
 con valor por defecto ``"ambos"``, y devuelve el nombre del rey que acumula más victorias. Tenga en cuenta 
 que un rey puede ganar una batalla en la que actúa como atacante, en cuyo caso el campo ``gana_atacante`` será
@@ -107,3 +115,26 @@ def rey_mas_victorias(batallas: list["BatallaGOT"], rol: str = "ambos") -> str|N
 
     rey_ganador = max(victorias, key=victorias.get)
     return rey_ganador
+
+"""5.	**rey_mas_victorias_por_region**: recibe una lista de tuplas de tipo ``BatallaGOT`` y una cadena 
+``rol``, con valor por defecto ``"ambos"``, y devuelve un diccionario que relaciona cada región con el nombre del rey que 
+acumula más victorias en batallas ocurridas en esa región. El parámetro ``rol`` tiene el mismo significado que en la función 
+anterior. Si para alguna región no hay ningún rey que haya ganado una batalla con el rol especificado, en el diccionario 
+aparecerá el valor ``None`` asociado a dicha región. Puede usar la función ``rey_mas_victorias`` para resolver este ejercicio. 
+Por ejemplo, si pasamos a la función la lista completa de batallas contenida en el CSV, y el parámetro ``rol`` contiene 
+``"ambos"``, la función devuelve un diccionario que, entre otros ítems, asocia la clave ``"The Stormlands"`` a ``"Joffrey 
+Baratheon"``; esto significa que dicho rey es el que ganó más batallas de entre las batallas ocurridas en "The Stormlands", 
+sumando tanto las victorias en batallas en las que fue atacante, como las victorias en batallas en las que fue atacado. _(2 puntos)_"""
+
+def rey_mas_victorias_por_region(batallas: list["BatallaGOT"], rol: str = "ambos") -> dict[str, str|None]:
+    regiones = defaultdict(list)
+
+    for b in batallas:
+        regiones[b.region].append(b)
+
+    resultado = {}
+    for region, batallas_region in regiones.items():
+        rey_ganador = rey_mas_victorias(batallas_region, rol)
+        resultado[region] = rey_ganador
+
+    return resultado
